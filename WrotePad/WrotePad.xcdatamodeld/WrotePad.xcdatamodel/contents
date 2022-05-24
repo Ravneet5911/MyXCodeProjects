@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Categories" representedClassName=".Categories" syncable="YES" codeGenerationType="class">
+        <attribute name="itemName" attributeType="String"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WritingPad" inverseName="newRelationship" inverseEntity="WritingPad"/>
+    </entity>
+    <entity name="WritingPad" representedClassName=".WritingPad" syncable="YES" codeGenerationType="class">
+        <attribute name="text" attributeType="String"/>
+        <relationship name="newRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="newRelationship" inverseEntity="Categories"/>
+    </entity>
+    <elements>
+        <element name="Categories" positionX="-484.7109375" positionY="-24.05078125" width="128" height="73"/>
+        <element name="WritingPad" positionX="-252.59765625" positionY="-20.87109375" width="128" height="59"/>
+    </elements>
+</model>
